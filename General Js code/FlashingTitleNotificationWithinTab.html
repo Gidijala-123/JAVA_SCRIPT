@@ -1,0 +1,8 @@
+<title>Food Delivery webapp</title>
+<script>
+  let showingAlert = false;
+  const interval = setInterval(() => {
+    document.title = showingAlert ? "Food Delivery" : "(1) New Message";
+    showingAlert = !showingAlert;
+  }, 1300);
+</script>

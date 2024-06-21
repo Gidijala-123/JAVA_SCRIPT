@@ -1,0 +1,19 @@
+<button class="notify">Notify Me</button>
+<script>
+  const NotificationBtn = document.querySelector(".notify");
+
+  const requestPermission = function () {
+    console.log("Button Clicked");
+    if (!("Notification" in window)) {
+      throw new Error("Browser doesn't support notification");
+    }
+    Notification.requestPermission().then((permission) => {
+      console.log(permission);
+      const notification = new Notification("Test", {
+        body: "You got a message..!",
+        icon: "https://res.cloudinary.com/debrctei3/image/upload/v1704516571/others/system-solid-46-notification-bell_kjgkdf.gif",
+      });
+    });
+  };
+  NotificationBtn.addEventListener("click", requestPermission);
+</script>

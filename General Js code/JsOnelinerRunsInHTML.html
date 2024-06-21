@@ -1,0 +1,27 @@
+<script>
+  // GET CURRENTURL
+  const currentURL = window.location.href;
+  console.log(currentURL);
+
+  // REDIRECT TO NEW URL
+  window.location.replace(url);
+
+  // SET A COOKIE
+  document.cookie = "name=value; expires=date;path=path;domain=domain;secure";
+
+  // GET A COOKIE
+  const cookieValue = document.cookie.replace(
+    /(?:(?:^|.*;\s*)name\s*\=\s*([^;]*).*$)|^.*$/,
+    "$1"
+  );
+
+  // CHECK FOR EXISTING COOKIE
+  document.cookie.split(";").some((item) => item.trim().startsWith("name="));
+
+  // REMOVE A COOKIE
+  document.cookie =
+    "name=; expires=Thu;10 Jan 2024 00:00:00 UTC; path=path;domain=domain;secure";
+
+  // COPY TEXT TO CLIPBOARD
+  navigator.clipboard.writeText(text);
+</script>

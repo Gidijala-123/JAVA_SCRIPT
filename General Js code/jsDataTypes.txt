@@ -1,0 +1,27 @@
+String: Represents textual data.
+let str = "Hello, World!"; Boolean: Represents either true or false.
+let isTrue = true;
+let isFalse = false;
+
+Array: Represents an ordered list of values.
+let colors = ["red", "green", "blue"];
+
+Object: Represents a collection of key-value pairs.
+let person = {
+  name: "John Doe",
+  age: 30,
+  isStudent: false
+};
+
+Null: Represents the intentional absence of any object value.
+let nullValue = null;
+
+Undefined: Represents an uninitialized variable or a variable without a value.
+let undefinedValue;
+
+Symbol: Represents a unique identifier.
+let uniqueKey = Symbol("unique key");
+
+BigInt: Represents integers of arbitrary precision.
+let bigIntNum = 9007199254740991n;
+These are the main data types in JavaScript. It's worth noting that JavaScript is a loosely typed language, so variables can change types during runtime. For example, a variable initially assigned a number can later be assigned a string.
